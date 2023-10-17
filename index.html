@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table id="data">
+        <tr>
+            <th>Action</th>
+            <th>ID</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Month,Year</th>
+            <th>Dates Excluded</th>
+            <th>Number of Days</th>
+            <th>Lead count</th>
+            <th>Expected DRR</th>
+            <th>Last Updated</th>
+        </tr>
+        <tr>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td><input type="date" id="Start-date"></td>
+            <td><input type="date" id="End-date"></td>
+            <td>10</td>
+            <td><input type="date" id="Date-excluded"></td>
+            <td id="number-days">120</td>
+            <td><input type="number" id="Lead-number"></td>
+            <td><input type="number" placeholder="0" id="Expected-drr"></td>
+            <!-- <td><input type="number" placeholder="1000" id="last-upadted"></td> -->
+            <td><button id="save-button" onclick="addNewRow()">Save</button></td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
